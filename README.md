@@ -1,47 +1,123 @@
-# Pokemon-Go-Rocket-API
+## Versioning
 
-#Window
-![alt tag](https://github.com/DetectiveSquirrel/Pokemon-Go-Rocket-API/blob/master/MainWindow.png)
-![alt tag](https://github.com/DetectiveSquirrel/Pokemon-Go-Rocket-API/blob/master/MainPokeUi.png)
-![alt tag](https://github.com/DetectiveSquirrel/Pokemon-Go-Rocket-API/blob/master/MainSettings2.png)
+We are following [semantic versioning](http://semver.org/) for POGOProtos.  Every version will be mapped to their current PokémonGo version.
 
-#Console
-![alt tag](https://github.com/DetectiveSquirrel/Pokemon-Go-Rocket-API/blob/master/screenshot.png)
+| Version      | Android       | IOS           |
+|--------------|---------------|---------------|
+| 2.1.0        | 0.45.0        | 1.15.0        |
+| 2.1.0-beta   | 0.45.0        | 1.15.0        |
+| 2.0.2        | 0.43.4        | 1.13.4        |
+| 2.0.1        | 0.43.4        | 1.13.4        |
+| 2.0.0        | 0.43.4        | 1.13.4        |
 
+If you want to figure out the current version in an automated system, use this file.
 
-A Pokemon Go bot in C#
+https://raw.githubusercontent.com/AeonLucid/POGOProtos/master/.current-version
+
+*Note: This file will contain pre-release versions too.*
+
+<!-- define variables -->
+[1.1]: http://i.imgur.com/M4fJ65n.png (ATTENTION)
+[1.2]: https://discordapp.com/api/guilds/208485545439920128/widget.png?style=banner2 (DISCORD)
+
+<!-- title -->
+# RocketBot
+<!-- disclaimer -->
+![alt text][1.1] <strong><em> The contents of this repo are a proof of concept and are for educational use only </em></strong>![alt text][1.1]<br/>
+[![Stories in Ready](https://badge.waffle.io/1461748123/Pokemon-Go-Rocket-API.svg?label=accepted&title=Accepted)](http://waffle.io/1461748123/Pokemon-Go-Rocket-API)
+[![Stories in Ready](https://badge.waffle.io/1461748123/Pokemon-Go-Rocket-API.svg?label=in%20progress&title=In Progress)](http://waffle.io/1461748123/Pokemon-Go-Rocket-API)
+[![Stories in Ready](https://badge.waffle.io/1461748123/Pokemon-Go-Rocket-API.png?label=ready&title=Ready)](https://waffle.io/1461748123/Pokemon-Go-Rocket-API)
+
+<p align="center">
+  <a href="https://discord.gg/y6EU2qY">
+    <img alt="Logo" src="https://discordapp.com/api/guilds/208485545439920128/widget.png?style=banner2">
+  </a>
+</p>
+
+## Images
+![alt tag](https://raw.githubusercontent.com/TheUnnameOrganization/RocketBot/master/Images/MainForm.png)  
+![alt tag](https://raw.githubusercontent.com/TheUnnameOrganization/RocketBot/master/Images/SettingForm.png)
+![alt tag](https://raw.githubusercontent.com/TheUnnameOrganization/RocketBot/master/Images/SettingForm_2.png)
+![alt tag](https://raw.githubusercontent.com/TheUnnameOrganization/RocketBot/master/Images/SettingForm_3.png)
+![alt tag](https://raw.githubusercontent.com/TheUnnameOrganization/RocketBot/master/Images/SettingForm_4.png)
+![alt tag](https://raw.githubusercontent.com/TheUnnameOrganization/RocketBot/master/Images/SettingForm_5.png)
+
+A Pokémon Go bot in C#
 
 ## Features
 * PTC / Google Login
 * Get Map Objects and Inventory
-* Search for Gyms / Pokéstops / Spawns
+* Live map showing Pokéstops and farming path
+* Search for Pokéstop
 * Farm Pokéstops
 * Farm all Pokémon in the neighbourhood
 * Evolve Pokémon
 * Transfer Pokémon
+* Powerup Pokémon
+* Force unban
+* Use LuckyEgg
 * Auto-Recycle uneeded items
+* View all Pokémon CP/IV %
+* Transfer/Powerup/Evolve Pokémon
 * Output level and needed XP for levelup
-* Output Username, Level, Stardust, XP/hour, Pokemon/hour in Console Title
-* German/English pokemon names
+* Output Username, Level, Stardust, XP/hour, Pokémon/hour in Console Title
 * Automatic use of Razzberries
 * Automatic Update checker
-* Logs everything into Logs.txt
+* Logs everything into Logs folder
 
 ## Getting Started
+### Download
+Download the bot from the [release](https://github.com/1461748123/Pokemon-Go-Rocket-API/releases) tab.  
+If you want the latest Beta-Build, you have to download the build from the Beta-Build branch and compile them by yourself with VisualStudio 2015.   
+**Waning: Beta-Builds are unstable and might cause damage to your account, use at your own risk**
+### Login
+There are problems with google oauth login, so we have to use account and password to login for now.  
+To ensure your account's safety, we suggest you to creat an app password just for botting. This will also allows users with 2-fact-auth enable to use the bot.  
+Tutorial on how to use app password: [Google support](https://support.google.com/mail/answer/185833?hl=en)
+### Settings
+Change your settings using the settings tab on the bot. If you want more advance settings, edit the settings file under the bot's folder.
+### Wola
+Click Start Bot and enjoy!
 
-Go to PokemonGo\RocketAPI\Console\App.config -> Edit the Settings you like -> Build and Run (CTRL+F5)
+# How can I contribute?
+## For users:
+You can contribute in many ways, here are some that you can do to help the project out!
+### Join discord channel and help answer questions
+We have more and more users everyday, so we have a lot of questions from new users who haven't fully understand how the bot works yet. If you want to help them out, join our official discord channel :)
+### Answer questions in [issues](https://github.com/1461748123/Pokemon-Go-Rocket-API/issues)
+Same as above, you can help by answering questions in the [issues](https://github.com/1461748123/Pokemon-Go-Rocket-API/issues) tab!
+### Report bugs
+Report bugs you found in [issues](https://github.com/1461748123/Pokemon-Go-Rocket-API/issues).  
+In order to help us fix the problem, please take a screenshot of the error you get and also attach your log file (under the Logs folder) as well. Add [Bug] to the title to help us quickly identify the category of the issue.  
+### Suggestions/ideas
+Tell us what you think we can do better in [issues](https://github.com/1461748123/Pokemon-Go-Rocket-API/issues).  
+Give detailed discription to help us understand what you are looking for. Add [Suggestion] to the title to help us quickly identify the category of the issue. Your suggestion might not be accept, but hey, maybe we will accept your suggestion next time! :)
+## For developers:
+You can contribute to the project by helping us on coding.  
+Fork this project and create a new branch to add your code or fix a known issue.  
+Use pull request to submit your code. Remember, submit to *Beta-Build* branch! :D
+## Donations
+We are not accepting donations currently :) If you really wanna contribute, consider doing the stuff above! :D
 
 # Settings
 ## AuthType
-* *Google* - Google login via oauth2
-* *Ptc* - Pokémon Trainer Club login with username/password combination
+* *google* - Google login
+* *ptc* - Pokémon Trainer Club
 
 ## PtcUsername
-* *username* for PTC account. No need for when using Google.
-* *password* for PTC account. No need for when using Google.
+* *username* - for PTC account. No need for when using Google.
+
+## PtcPassword
+* *password* - for PTC account. No need for when using Google.
+
+## Email
+* *email@gmail.com* - for Google account. No need for when using PTC.
+
+## Password
+* *password* - for Google account. No need for when using PTC.
 
 ## GoogleRefreshToken
-* *GoogleRefreshToken* - You get this code when you connect the application with your Google account. You do not need to enter it.
+* *token* - for Google account. No need for wen using PTC. (Obsolete)
 
 ## DefaultLatitude
 * *12.345678* - Latitude of your location you want to use the bot in. Number between -90 and +90. Doesn't matter how many numbers stand after the comma.
@@ -57,33 +133,47 @@ Go to PokemonGo\RocketAPI\Console\App.config -> Edit the Settings you like -> Bu
 * *seconds* - After X seconds it will print the current level and experience needed for levelup when using *time* mode.
 
 ## Recycler
-* *false* Recycler not active.
-* *true* Recycler active.
+* *false* - Recycler not active.
+* *true* - Recycler active.
 
 ## RecycleItemsInterval
-* *seconds* After X seconds it recycles items from the filter in *Settings.cs*.
+* *seconds* - After X seconds it recycles items from the filter in *Settings.cs*.
 
 ## Language
-* *english* Outputs caught Pokémon in english name.
-* *german*  Outputs caught Pokémon in german name.
+* *english* - Outputs caught Pokémon in english name.
+* *german*  - Outputs caught Pokémon in german name.
 
 ## RazzBerryMode
-* *cp* - Use RazzBerry when Pokemon is over specific CP.
-* *probability* - Use RazzBerry when Pokemon catch chance is under a specific percentage.
+* *cp* - Use RazzBerry when Pokémon is over specific CP.
+* *probability* - Use RazzBerry when Pokémon catch chance is under a specific percentage.
 
 ## RazzBerrySetting
-* *value* CP: Use RazzBerry when Pokemon is over this value | Probability Mode: Use Razzberry when % of catching is under this value
+* *cp value* - If RazzBerryMode is cp. Use RazzBerry when Pokémon is over this value
+* *probability value* - If RazzBerryMode is probability. Use Razzberry when % of catching is under this value. Between 0 and 1.
 
 ## TransferType
 * *none* - disables transferring
-* *cp* - transfers all pokemon below the CP threshold in the app.config, EXCEPT for those types specified in program.cs in TransferAllWeakPokemon
-* *leaveStrongest* - transfers all but the highest CP pokemon of each type SPECIFIED IN program.cs in TransferAllButStrongestUnwantedPokemon (those that aren't specified are untouched)
-* *duplicate* - same as above but for all pokemon (no need to specify type), (will not transfer favorited pokemon)
-* *all* - transfers all pokemon
+* *cp* - transfers all Pokémon below the CP threshold in the app.config, EXCEPT for those types specified in program.cs in TransferAllWeakPokemon
+* *leaveStrongest* - transfers all but the highest CP Pokémon of each type SPECIFIED IN program.cs in TransferAllButStrongestUnwantedPokemon (those that aren't specified are untouched)
+* *duplicate* - same as above but for all Pokémon (no need to specify type), (will not transfer favorited Pokémon)
+* *all* - transfers all Pokémon
 
 ## TransferCPThreshold
-* *CP* transfers all Pokémon with less CP than this value.
+* *CP* - transfers all Pokémon with less CP than this value.
+
+## TransferIVThreshold
+* *IV* - transfers all Pokémon with less IV than this value. Between 0 and 1.
+
+## TravelSpeed
+* *Speed* - Travel speed in km/h
+
+## ImageSize
+* *px* - Pixel size for Pokémon Thumbnails
+
+## CatchPokemon
+* *true* - Catch Pokémon and get Items from PokéStops
+* *false* - Don't catch Pokémon and get Items from PokéStops
 
 ## EvolveAllGivenPokemons
-* *false* Evolves no Pokémon.
-* *true* Evolves all Pokémon.
+* *false* - Evolves no Pokémon.
+* *true* - Evolves all Pokémon.
